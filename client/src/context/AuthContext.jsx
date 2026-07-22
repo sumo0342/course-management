@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useEffect, useCallback } from 'react';
 
 // --- API client (merged in from the former api.js file) ---
-const BASE = '/api';
+const BASE = `${import.meta.env.VITE_API_URL}/api`;
 const TOKEN_KEY = 'cms_token';
 
 export function getToken() {
